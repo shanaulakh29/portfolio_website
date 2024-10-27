@@ -21,11 +21,11 @@ export default function Header() {
       <div className="hidden md:inline-block float-right ">
         <ul>
           <li>
-            <NavLink to="" className="mr-8 text-lg hover:border-b-4 hover:rounded-full">
+            <NavLink to="/" className="mr-8 text-lg hover:border-b-4 hover:rounded-full">
               <FontAwesomeIcon icon={faHouse} style={{ color: "#74C0FC" }} />{" "}
               Home
             </NavLink>
-            <NavLink to="" className="mr-8 text-lg">
+            <NavLink to="/about" className="mr-8 text-lg">
               <FontAwesomeIcon
                 icon={faUser}
                 style={{
