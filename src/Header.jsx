@@ -40,7 +40,7 @@ export default function Header() {
               <FontAwesomeIcon icon={faTv} />
               Projects
             </NavLink>
-            <NavLink to="" className="mr-8 text-lg">
+            <NavLink to="/resume" className="mr-8 text-lg">
               <FontAwesomeIcon icon={faFileInvoice} />
               Resume
             </NavLink>
