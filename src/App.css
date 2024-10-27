@@ -1,3 +1,10 @@
 .cursorInTypeEffect{
     line-height:20px;font-size: 2.5rem;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0px 1000px #64748b inset; /* bg-slate-500 hex color */
+  box-shadow: 0 0 0px 1000px #64748b inset;
+  -webkit-text-fill-color: white; /* Text color inside the input */
+}
