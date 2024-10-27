@@ -1,16 +1,24 @@
 
 import './App.css'
-import HomePage from './HomePage'
-import WindowWidth from './WindowWidth'
+import RootPage from './RootPage' 
+import HomePageText from './HomePageText'
+import About from './About'
+import {Route,RouterProvider,createBrowserRouter,createRoutesFromElements} from 'react-router-dom'
+const router=createBrowserRouter(createRoutesFromElements(
+  <Route path="/" element={<RootPage/>}>
+    <Route index element={<> <HomePageText/>  </>}></Route>
+    <Route path="about" element={<About/>}></Route>
+
+  </Route>
+))
+{/* <Route path="" element={<HomePageText/>}></Route>
+<Route path="" element={<WindowWidth/>}></Route> */}
 function App() {
 
 
   return (
-    <div className="text-white " style={{backgroundColor:"black"}}>
-      <HomePage />
-     <WindowWidth/>
-     
-    </div>
+    <RouterProvider router={router}></RouterProvider>
+
   )
 }
 

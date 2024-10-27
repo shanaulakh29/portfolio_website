@@ -16,6 +16,9 @@ export default {
       },
       animation:{
         bounce:"bounce 1.5s linear  infinite"
+      },
+      boxShadow:{
+      'blue': '10px 6px 12px blue'
       }
     },
   },
