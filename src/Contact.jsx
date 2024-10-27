@@ -6,14 +6,14 @@ export default function Contact() {
   return (
     <div className="md:min-h-screen md:flex md:items-center md:justify-center">
       <div className=" flex flex-col md:flex-row md:justify-center items-center  md:w-5/6 rounded-xl overflow-hidden bg-purple-800">
-        <div className="md:w-1/2 text-center lg:text-left lg:pl-6  md:pt-0  mt-8 md:mt-0">
+        <div className="md:w-1/2 text-center lg:text-left lg:pl-6  md:pt-0  mt-8 md:mt-0 ">
             <h1 className="text-5xl">Let's Connect</h1>
             <p className="pt-6 tracking-widest">
               I'm always open to new opportunities and collaborations. Whether
               you have an exciting project in mind, want to discuss potential
               job opportunities, or simply connect, I'd love to hear from you.
             </p>
-            <div className="pt-4 sm:mb-8">
+            <div className="pt-4 sm:mb-8 pb-6">
             <GitHubIcon style={{fontSize:"40px", marginRight:"10px"}}/>
             <LinkedInIcon style={{fontSize:"40px"}}/>
             </div>
