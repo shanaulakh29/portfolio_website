@@ -53,7 +53,7 @@ export default function HomePageText() {
         <div className="mt-10 lg:mt-0 border-blue-500  lg:w-1/2  rounded-xl ">
           <div className="lg:items-center mt-12 flex justify-center">
             <img
-              src="/public/codingImage7.png"
+              src="/codingImage7.png"
               alt="HomePage Impressive Image showing an animated person studying on a laptop"
               style={{ width: "470px" }}
               data-tilt
