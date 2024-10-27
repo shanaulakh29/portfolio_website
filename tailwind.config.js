@@ -19,6 +19,9 @@ export default {
       },
       boxShadow:{
       'blue': '10px 6px 12px blue'
+      },
+      height:{
+        heightForProjectCards:'700px',
       }
     },
   },

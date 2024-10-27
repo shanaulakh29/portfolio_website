@@ -36,7 +36,7 @@ export default function Header() {
               />
               About Me
             </NavLink>
-            <NavLink to="" className="mr-8 text-lg">
+            <NavLink to="/project" className="mr-8 text-lg">
               <FontAwesomeIcon icon={faTv} />
               Projects
             </NavLink>
