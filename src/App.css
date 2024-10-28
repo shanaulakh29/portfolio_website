@@ -8,3 +8,18 @@ input:-webkit-autofill:hover {
   box-shadow: 0 0 0px 1000px #64748b inset;
   -webkit-text-fill-color: white; /* Text color inside the input */
 }
+@keyframes dropdownAnimation {
+    0% {
+      width: 300px; /* Starting width */
+    }
+    50% {
+      width: 350px; /* Expanded width during animation */
+    }
+    100% {
+      width: 300px; /* Reset to original width */
+    }
+  }
+  
+  .animate-dropdown {
+    animation: dropdownAnimation 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Adjust the cubic-bezier values for desired motion */
+  }
