@@ -8,7 +8,7 @@ export default function Project() {
       <div className="flex m-8 justify-center gap-8 mt-12 flex-wrap ">
         <div className="flex flex-col border sm:max-w-lg  lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-red-700 shadow-2xl hover:scale-95">
           <div className="">
-            <img src="/MazeGame.jpg" className="h-96" ></img> 
+            <img src="/MazeGame.jpg" className="h-96 object-cover" ></img> 
           </div>
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-2xl font-bold mt-3 ">
