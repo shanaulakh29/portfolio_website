@@ -6,12 +6,14 @@ export default function Footer() {
   return (
     <div className=" mt-6 flex justify-between h-14 items-center">
       <div className="ml-6 tracking-wide">
-        &copy; 2024 - Gurshan Aulakh <p className="sm:block md:inline text-center">No rights reserved.</p>
+        &copy; 2024 - Gurshan Aulakh <p className="hidden md:inline text-center">No rights reserved.</p>
       </div>
       <div className="mr-6 flex items-center w-1/2 justify-evenly xl:justify-end">
+      <Link to="/contact">
       <button className="flex items-center justify-center rounded-xl border-white border-2 hover:border-purple-500 h-10 w-32 xl:mr-14"> {/* Added padding for a better button size */}
           Email Me
         </button>
+        </Link> 
 
         <button className="xl:mr-14">
           

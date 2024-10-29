@@ -1,4 +1,5 @@
 import React,{useState, useRef} from "react";
+import {Link} from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import emailjs from '@emailjs/browser'
@@ -88,8 +89,12 @@ export default function Contact() {
               job opportunities, or simply connect, I'd love to hear from you.
             </p>
             <div className="pt-4 sm:mb-8 pb-6">
+              <Link to="https://github.com/shanaulakh29">
             <GitHubIcon style={{fontSize:"40px", marginRight:"10px"}}/>
+            </Link>
+            <Link to="https://www.linkedin.com/in/shan-aulakh-183a94192/">
             <LinkedInIcon style={{fontSize:"40px"}}/>
+            </Link>
             </div>
    
         </div>
