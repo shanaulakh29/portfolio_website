@@ -74,7 +74,7 @@ export default function Header() {
               Contact
               <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
             </NavLink>
-            <div className="inline-block  text-xl mr-3">
+            <div className="inline-block  text-xl mr-2">
               <FontAwesomeIcon icon={faCircleHalfStroke} flip="vertical" />
             </div>
 
