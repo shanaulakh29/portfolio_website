@@ -2,10 +2,11 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
-// import WindowWidth from './WindowWidth'
+
+
 export default function RootPage() {
   return (
-    <div className="text-white bg-black">
+    <div className="text-white relative bg-black">
       <Header/>
       <Outlet/>  
       <Footer/>
@@ -14,3 +15,17 @@ export default function RootPage() {
   )
 }
 
+// import React from "react";
+// import ParticlesBackground from "./ParticlesBackground";
+// import HomePageText from "./HomePageText";
+
+// const RootPage = () => {
+//   return (
+//     <div style={{ position: "relative", height: "100vh", overflow: "hidden" }}>
+//       <ParticlesBackground />
+//       {/* <HomePageText /> */}
+//     </div>
+//   );
+// };
+
+// export default RootPage;
