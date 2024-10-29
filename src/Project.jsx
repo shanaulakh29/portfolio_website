@@ -13,7 +13,7 @@ export default function Project() {
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-2xl font-bold mt-3 ">
               Maze Game{" "}
-              <Link to="https://github.com/shanaulakh29">
+              <Link to="https://github.com/shanaulakh29/Maze-Game-In-Java">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"
@@ -41,7 +41,7 @@ export default function Project() {
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-2xl font-bold mt-3 ">
               Inventory Management{" "}
-              <Link to="https://github.com/shanaulakh29">
+              <Link to="https://github.com/shanaulakh29/Water-Purification-Inventory-Management">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"
@@ -66,8 +66,8 @@ export default function Project() {
           </div>
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-3xl font-bold mt-3 ">
-              Maze Game{" "}
-              <Link to="https://github.com/shanaulakh29">
+              Expense Tracker{" "}
+              <Link to="https://github.com/shanaulakh29/Expense_Tracker">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"
@@ -92,8 +92,8 @@ export default function Project() {
           </div>
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-3xl font-bold mt-3 ">
-              Maze Game{" "}
-              <Link to="https://github.com/shanaulakh29">
+              Movie App{" "}
+              <Link to="https://github.com/shanaulakh29/Movie-App">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"
@@ -118,8 +118,8 @@ export default function Project() {
           </div>
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-3xl font-bold mt-3 ">
-              Maze Game{" "}
-              <Link to="https://github.com/shanaulakh29">
+              Weather App{" "}
+              <Link to="https://github.com/shanaulakh29/Weather-App">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"
@@ -143,8 +143,8 @@ export default function Project() {
           </div>
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-3xl font-bold mt-3 ">
-              Maze Game{" "}
-              <Link to="https://github.com/shanaulakh29">
+              Appointment Form{" "}
+              <Link to="https://github.com/shanaulakh29/Appointment_Planner">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"
@@ -168,8 +168,8 @@ export default function Project() {
           </div>
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-3xl font-bold mt-3 ">
-              Maze Game{" "}
-              <Link to="https://github.com/shanaulakh29">
+              Product Model{" "}
+              <Link to="https://github.com/shanaulakh29/Product-Modal-using-Tailwind-CSS">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"
@@ -191,8 +191,8 @@ export default function Project() {
           </div>
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-3xl font-bold mt-3 ">
-              Maze Game{" "}
-              <Link to="https://github.com/shanaulakh29">
+              UserList{" "}
+              <Link to="https://github.com/shanaulakh29/Bootstrap_UserList">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
                   <GitHubIcon
                     className="animate-pulse"

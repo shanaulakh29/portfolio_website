@@ -74,14 +74,14 @@ export default function Header() {
               Contact
               <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
             </NavLink>
-            <div className="inline-block  text-xl mr-2">
+            {/* <div className="inline-block  text-xl mr-2">
               <FontAwesomeIcon icon={faCircleHalfStroke} flip="vertical" />
-            </div>
+            </div> */}
 
       </div>
 
       <div
-        className="float-right block md:hidden"
+        className="float-right block md:hidden cursor-pointer"
         onClick={() => {
           let body = document.getElementById("body");
           if (body.className.includes("overflow-hidden")) {
@@ -93,9 +93,9 @@ export default function Header() {
           setIsDropdownVisible((prev) => !prev);
         }}
       >
-         <div className="inline-block  text-3xl mr-10">
+         {/* <div className="inline-block  text-3xl mr-10">
               <FontAwesomeIcon icon={faCircleHalfStroke} flip="vertical" />
-            </div>
+            </div> */}
             <div className="inline-block">
         <div
           className={`w-8 bg-white transition-all duration-300  ${
