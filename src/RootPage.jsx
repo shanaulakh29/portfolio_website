@@ -2,15 +2,15 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
-import WindowWidth from './WindowWidth'
-import ParticlesBackground from './ParticlesBackground';
+
+
 export default function RootPage() {
   return (
     <div className="text-white relative bg-black">
       <Header/>
       <Outlet/>  
       <Footer/>
-      <WindowWidth/>
+      {/* <WindowWidth/> */}
     </div>
   )
 }
