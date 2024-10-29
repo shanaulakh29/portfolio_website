@@ -129,7 +129,7 @@ export default function Header() {
             </div>
          
           <div className="text-3xl  mt-3 tracking-wide hover:scale-110">
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/project">Projects</NavLink>
           </div>
           <div className="text-3xl  mt-3 tracking-wide hover:scale-110">
             <NavLink to="/resume">Resume</NavLink>
