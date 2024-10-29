@@ -6,10 +6,12 @@ import About from './About'
 import Project from './Project'
 import Contact from './Contact'
 import Resume from './Resume'
+
 import {Route,RouterProvider,createBrowserRouter,createRoutesFromElements} from 'react-router-dom'
 const router=createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<RootPage/>}>
-    <Route index element={<> <HomePageText/>  </>}></Route>
+    <Route index element={<> 
+      <HomePageText/>  </>}></Route>
     <Route path="about" element={<About/>}></Route>
     <Route path="project" element={<Project/>}></Route>
     <Route path="contact" element={<Contact/>}></Route>

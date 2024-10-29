@@ -30,24 +30,24 @@ export default function Header() {
   }, [isDropdownVisible]);
 
   return (
-    <div className=" w-full p-3 text-white relative">
+    <div className=" w-full p-3 text-white relative ">
       <div className="inline-block">
-        <h1 className="text-3xl ">
-          GSA<p className="animate-bounce inline-block pl-1">.</p>
+        <h1 className="text-4xl font-serif font-bold">
+          GSA<p className="animate-bounce inline-block pl-1 text-yellow-500">.</p>
         </h1>
       </div>
 
-      <div className="hidden md:inline-block float-right ">
-        <ul>
-          <li>
+      <div className="hidden md:inline-block float-right mt-3">
+
             <NavLink
               to="/"
-              className="mr-8 text-lg hover:border-b-4 hover:rounded-full"
+              className="mr-7 text-xl inline-block group"
             >
-              <FontAwesomeIcon icon={faHouse} style={{ color: "#74C0FC" }} />{" "}
+              <FontAwesomeIcon icon={faHouse} className="mr-1 relative -top-0.5" style={{ color: "#74C0FC" }} />
               Home
+              <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
             </NavLink>
-            <NavLink to="/about" className="mr-8 text-lg">
+            <NavLink to="/about" className="mr-7 text-xl inline-block group ">
               <FontAwesomeIcon
                 icon={faUser}
                 style={{
@@ -57,24 +57,27 @@ export default function Header() {
                 }}
               />
               About Me
+              <div className=" scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
             </NavLink>
-            <NavLink to="/project" className="mr-8 text-lg">
-              <FontAwesomeIcon icon={faTv} />
+            <NavLink to="/project" className="mr-7 text-xl inline-block group">
+              <FontAwesomeIcon icon={faTv} className="mr-1"/>
               Projects
+              <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
             </NavLink>
-            <NavLink to="/resume" className="mr-8 text-lg">
-              <FontAwesomeIcon icon={faFileInvoice} />
+            <NavLink to="/resume" className="mr-7 text-xl inline-block group">
+              <FontAwesomeIcon icon={faFileInvoice}className="mr-1" />
               Resume
+              <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
             </NavLink>
-            <NavLink to="/contact" className="mr-8 text-lg">
-              <FontAwesomeIcon icon={faEnvelope} />
+            <NavLink to="/contact" className="mr-7 text-xl inline-block  group">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-1"/>
               Contact
+              <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
             </NavLink>
-            <div className="inline-block  text-xl mr-4">
+            <div className="inline-block  text-xl mr-2">
               <FontAwesomeIcon icon={faCircleHalfStroke} flip="vertical" />
             </div>
-          </li>
-        </ul>
+
       </div>
 
       <div
