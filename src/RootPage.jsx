@@ -4,6 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 
 
+
 export default function RootPage() {
   return (
     <div className="text-white relative bg-black">
