@@ -2,43 +2,57 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="mt-6">
-      <h1 className="text-6xl text-center">Know Who I'M </h1>
+    <div className="mt-6 text-gray-200">
+      <h1 className="text-6xl text-center text-purple-500">Know Who I'M </h1>
       <div className="flex flex-col lg:flex-row ">
         <div className="lg:pl-6 lg:w-1/2 lg:mr-8 ">
-          <p className="mt-6 relative p-6  w-5/6 mx-auto  tracking-widest border border-blue-500 rounded-2xl bg-white text-black transform transition-all duration-100 ease-in-out hover:scale-105 hover:bg-gray-50 hover:text-blue-900 hover:shadow-blue" >
-            Hello! I’m Gurshan Singh Aulakh, an enthusiastic Computer Science
-            student with a drive for developing impactful software solutions. My
-            journey is fueled by a passion for turning creative ideas into
-            intuitive, user-friendly applications that enhance everyday
-            experiences. I am eager to learn and thrive on solving complex
-            challenges, pushing the boundaries of what’s possible in tech.
-          </p>
+        <div className="mt-6 p-6 w-5/6 mx-auto border hover:shadow-purple-500 hover:shadow-2xl rounded-2xl transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-500">
+  <h2 className="font-bold text-3xl"><span className="block">👋 Hello! I'm </span><span className="text-purple-500 text-2xl ">Gurshan Aulakh</span></h2>
+  <p>
+    📚 <span className="font-extrabold text-lg text-purple-500">A Computer Science Student</span> at <span className="font-extrabold text-lg text-purple-500">Simon Fraser University</span>  
+  </p>
+  <p>
+    💡 <span className="font-semibold text-purple-500 ">Passionate about:</span> Developing software solutions that make a difference in people's lives.  
+  </p>
+  <p>
+    🚀 <span className="font-semibold text-purple-500 ">Driven by:</span> Turning innovative ideas into user-friendly applications.
+  </p>
+  <p>
+    🌱 <span className="font-semibold text-purple-500 ">Always eager to:</span> Push my boundaries and learn more in the tech world!
+  </p>
+</div>
+          
 
-          <p className="mt-6 w-5/6 mx-auto  p-6 tracking-widest border border-blue-500 rounded-2xl bg-white text-black transform transition-all duration-100 ease-in-out hover:scale-105 hover:bg-gray-100 hover:text-blue-900 hover:shadow-blue">
-            As an aspiring software developer, I bring a collaborative mindset
-            and a commitment to constant growth. Working within teams excites
-            me, as it not only expands my skills but also fosters meaningful
-            connections with fellow tech enthusiasts. Currently, I am actively
-            seeking internship opportunities to deepen my industry experience,
-            contribute fresh perspectives, and continue honing my abilities.
-          </p>
-          <p className="mt-6 w-5/6 mx-auto  p-6 tracking-widest border border-blue-500 rounded-2xl bg-white text-black transform transition-all duration-100 ease-in-out hover:scale-105 hover:bg-gray-100 hover:text-blue-900 hover:shadow-blue">
-            Beyond coding, I enjoy playing soccer, traveling, and exploring new
-            technologies. These activities fuel my creativity, keep me balanced,
-            and remind me that problem-solving is at the heart of everything I
-            love to do. I’m thrilled to be on this journey and can’t wait to see
-            where it takes me next!
+<div className="mt-6 p-6 w-5/6 mx-auto border hover:shadow-purple-500 hover:shadow-2xl rounded-2xl transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-500">
+  <h2 className="text-lg font-bold ">💡 As an aspiring software developer, I value:</h2>
+  <ul className="list-none  mt-2">
+    <li>🤝 <span className="text-purple-500 font-semibold">Teamwork</span>: I thrive in collaborative settings where I can learn from others and exchange ideas with fellow tech enthusiasts.</li>
+    <li>🚀<span className="text-purple-500 font-semibold">Real-World Experience</span>: I value hands-on projects and apply my skills in a practical environment.</li>
+    <li>💡 <span className="text-purple-500 font-semibold">Creative Contribution</span>: I’m excited to bring my fresh perspectives to the table and help brainstorm innovative solutions.</li>
+    <li>✨ <span className="text-purple-500 font-semibold">Skill Development</span>: I’m committed to continuously sharpening my technical skills and taking on new challenges that push me to grow.</li>
+  </ul>
+  <p className="mt-4">Let’s team up and create something amazing together!</p>
+</div>
+          <p className="mt-6 w-5/6 mx-auto p-6 tracking-widest border hover:shadow-purple-500 hover:shadow-2xl rounded-2xl transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-500">
+            🌍 Outside of coding, I have a passion for:
+            <ul className="  mt-2 list-none">
+              <li className="text-purple-500 font-semibold">⚽ Playing soccer</li>
+              <li className="text-purple-500 font-semibold">✈️ Traveling to new places</li>
+              <li className="text-purple-500 font-semibold">💡 Exploring emerging technologies</li>
+            </ul>
+            These activities spark my creativity, help me maintain balance, and
+            reinforce my love for problem-solving. I’m excited to continue
+            learning and discover where this journey will take me! 🌟
           </p>
         </div>
-        <div className="lg:w-1/2 mr-6 mt-12 lg:mt-10 flex justify-center lg:items-center">
-          <div className="border rounded-full overflow-hidden w-4/6 lg:w-5/6 ">
+        <div className="lg:w-1/2 mr-6 mt-12 lg:mt-0 flex justify-center items-center ">
+          <div className="rounded-full overflow-hidden w-4/6 lg:w-5/6 ">
             <img src="/MyImage.jpeg"></img>
           </div>
         </div>
       </div>
       <div>
-        <h2 className="mt-20 lg:mt-28 text-5xl text-center">My Skills Set</h2>
+        <h2 className="mt-20 lg:mt-20 text-5xl text-center text-purple-500">My Skills Set</h2>
         <div className="flex w-5/6 mx-auto flex-wrap  justify-center gap-4 mt-4">
           {/* C*/}
           <div className=" border p-4 rounded-3xl hover:scale-105">
@@ -526,6 +540,13 @@ export default function About() {
             </svg>
           </div>
         </div>
+      </div>
+
+      <div className="text-center text-purple-500 text-5xl mt-16 lg:mt-20">EDUCATION</div>
+      <div className="flex flex-col items-center justify-evenly h-60 text-xl ">
+         <p>Computer Science BSc</p>
+         <p>Simon Fraser University</p>
+         Expected Graduation: December 2027
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React,{useEffect} from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { NavLink } from "react-router-dom";
 import VanillaTilt from 'vanilla-tilt';
 export default function HomePageText() {
   let arrayShowingWhoIDo = [
@@ -36,12 +37,13 @@ export default function HomePageText() {
   }, []);
   return (
     <div>
-      <div className=" flex flex-col  lg:flex-row lg:h-screen ">
-        <div className="pl-6  w-full lg:w-1/2 mt-12 tracking-widest">
-          <h1 className="text-4xl lg:pr-20 lg:pt-36 ">
-            Hi There!
-            <p className="pt-2 sm:text-5xl lg:text-6xl">I'M Gurshan Aulakh</p>
-          </h1>
+      <div className="lg:h-screen">
+      <div className=" flex flex-col  lg:flex-row ">
+        <div className="pl-6  w-full mt-16  lg:w-1/2  tracking-widest">
+          <h1 className="text-6xl lg:text-8xl lg:pr-20 lg:pt-10 ">
+            Hi There! </h1>
+            <p className="pt-2 sm:text-5xl text-5xl lg:text-6xl mt-20">I'M <span className="text-purple-500">Gurshan Aulakh</span></p>
+         
 
           <span className="pt-10 inline-block text-4xl lg:text-5xl ">
             {text}
@@ -51,22 +53,57 @@ export default function HomePageText() {
           
         </div>
         <div className="mt-10 lg:mt-0 border-blue-500  lg:w-1/2  rounded-xl ">
-          <div className="lg:items-center mt-12 flex justify-center">
-            <img
+          <div className="lg:items-center mt-12 flex justify-center items-center ">
+          {/* xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" */}
+          <svg className=""  width="500" height="500" >
+    <g >
+     <title>Layer 1</title>
+     <ellipse  cx="50%" cy="50%" fill="black" id="svg_2" rx="200" ry="200" stroke="#748ef7" strokeWidth="5" >
+      <animate attributeName="rx" from="45%" to="30%" dur="5s"  repeatCount="indefinite"/>
+      <animate attributeName="ry" from="45%" to="30%" dur="5s"  repeatCount="indefinite"/>
+    </ellipse>
+
+
+      <ellipse cx="50%" cy="50%" fill="black" id="svg_3" rx="100" ry="100" stroke="#748ef7" strokeWidth="5">
+      <animate attributeName="rx" from="30%" to="45%" dur="5s"  repeatCount="indefinite"/>
+      <animate attributeName="ry" from="30%" to="45%" dur="5s"  repeatCount="indefinite"/>
+     </ellipse> 
+     <text id="myInitials"  x="50%"  y="50%"  textAnchor="middle" alignmentBaseline="middle" fontStyle="" fontSize="110" >GA
+      <tspan dx="5" dy="20" fill="orange">.
+      <animate  attributeName="dy" values="10;-23;10" dur="2s" repeatCount="indefinite"/>
+     </tspan>
+     </text>
+     <use xlinkHref="#myInitials" className="copy copy1"></use>
+     <use xlinkHref="#myInitials" className="copy copy2"></use>
+
+    </g>
+  
+   </svg>
+
+            {/* <img
               src="/codingImage7.png"
               alt="HomePage Impressive Image showing an animated person studying on a laptop"
               style={{ width: "470px" }}
               data-tilt
-            />
+            /> */}
           </div>
         </div>
+
       </div>
-      <div>
-        <h2 className="text-3xl pt-6 lg:text-6xl text-center">
+      <div className=" mt-8 lg:mt-0 flex justify-center lg:justify-start relative">
+       <NavLink to="/contact"  className="ml-6 p-5 mr-6 border rounded-3xl text-lg hover:text-purple-500 hover:border-purple-500 hover:shadow-2xl hover:shadow-purple-800 relative -top-2 active:-top-0" >Contact Me</NavLink> 
+       <NavLink to="/resume" className="ml-6 p-5 border rounded-3xl text-lg hover:text-purple-500  hover:border-purple-500 hover:shadow-2xl  hover:shadow-purple-800 relative -top-2 active:-top-0">View Resume</NavLink> 
+      </div>
+      </div>
+
+
+
+      <div className="mt-10 lg:mt-0">
+        <h2 className="text-4xl pt-6 lg:text-6xl text-center">
           LET ME <span className="text-purple-500">INTRODUCE</span> MYSELF
         </h2>
         <div className="flex flex-col lg:flex-row">
-          <div className=" pl-6 lg:w-1/2">
+          <div className=" pl-6 lg:w-1/2 text-lg">
             <p className="lg:pt-20 xl:pt-28 hidden lg:block tracking-widest">
               From the first moment I typed 'Hello, World!' 👨‍💻 into my console,
               I knew I had found my calling in the enchanting world of

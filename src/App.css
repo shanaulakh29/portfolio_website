@@ -8,18 +8,66 @@ input:-webkit-autofill:hover {
   box-shadow: 0 0 0px 1000px #64748b inset;
   -webkit-text-fill-color: white; /* Text color inside the input */
 }
-@keyframes dropdownAnimation {
+.animate-dropdown-Container {
+  animation: dropdownMenuContainerAnimation 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+@keyframes dropdownMenuContainerAnimation {
     0% {
-      width: 300px; /* Starting width */
+      width: 300px;
+ 
     }
     50% {
-      width: 350px; /* Expanded width during animation */
+      width: 350px; 
     }
     100% {
-      width: 300px; /* Reset to original width */
+      width: 300px; 
     }
   }
-  
-  .animate-dropdown {
-    animation: dropdownAnimation 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Adjust the cubic-bezier values for desired motion */
+
+.copy{
+  fill:none;
+  stroke: white;
+  stroke-width: 3;
+  stroke-dasharray:20px 30px;
+  stroke-dashOffset:0%;
+  animation: textAnimation 5s linear infinite;
+}
+@keyframes textAnimation {
+  100%{
+    stroke-dashOffset:30%;
   }
+}
+
+.copy1{
+  stroke:white;
+  animation-delay:2s;
+}
+.copy2{
+  stroke:#748ef7 ;
+  animation-delay:3s;
+}
+
+.fadeDiv{
+  animation: fadeDivAnimation 3s ease-in-out forwards;
+}
+@keyframes fadeDivAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.makeDivFlow{
+  animation: divFlowAnimation 2s ease-in-out infinite;
+}
+@keyframes divFlowAnimation {
+  0%{
+    bottom:1000px;
+  }
+  100%{
+    bottom:-500px;
+  }
+}
+
+

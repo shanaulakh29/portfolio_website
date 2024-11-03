@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function Project() {
   return (
     <div className="mt-20">
-      <h1 className="text-6xl  text-center">Projects</h1>
+      <h1 className="text-6xl  text-center text-purple-500">PROJECTS</h1>
       <div className="flex m-8 justify-center gap-8 mt-12 flex-wrap ">
-        <div className="flex flex-col border sm:max-w-lg  lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-red-700 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg  lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="">
             <img src="/MazeGame.jpg" className="h-96 object-cover" ></img> 
           </div>
@@ -33,7 +33,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col border sm:max-w-lg lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-red-700 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div>
             <img src="/WaterPurification.png" className="h-96"></img>
           </div>
@@ -60,7 +60,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-red-700 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="border">
             <img src="/ExpenseTracker.jpg" className="h-96"></img>
           </div>
@@ -86,7 +86,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-red-700 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="border">
             <img src="/MovieAppImage.jpeg" className="h-96"></img>
           </div>
@@ -112,7 +112,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-red-700 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="border">
             <img src="/WeatherAppImage.jpeg" className="h-96"></img>
           </div>
@@ -137,7 +137,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-red-700 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="border">
             <img src="/AppointmentPlanner.jpeg" className="h-96"></img>
           </div>
@@ -162,7 +162,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden h-heightForProjectCards bg-white scale-90 transition-all duration-700 hover:shadow-red-500 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden h-heightForProjectCards bg-white scale-90 transition-all duration-700 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="border">
             <img src="/ProductModel.jpeg" className="h-96"></img>
           </div>
@@ -185,7 +185,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden h-heightForProjectCards bg-white scale-90 transition-all duration-700 hover:shadow-red-500 shadow-2xl hover:scale-95">
+        <div className="flex flex-col border sm:max-w-lg md-max-w-sm lg:max-w-sm rounded-3xl overflow-hidden h-heightForProjectCards bg-white scale-90 transition-all duration-700 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="border">
             <img src="/UserList.jpeg" className="h-96"></img>
           </div>

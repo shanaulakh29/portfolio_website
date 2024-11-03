@@ -6,12 +6,14 @@ import About from './About'
 import Project from './Project'
 import Contact from './Contact'
 import Resume from './Resume'
-
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {Route,RouterProvider,createBrowserRouter,createRoutesFromElements} from 'react-router-dom'
 const router=createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<RootPage/>}>
     <Route index element={<> 
-      <HomePageText/>  </>}></Route>
+      <HomePageText/>  
+      </>}></Route>
     <Route path="about" element={<About/>}></Route>
     <Route path="project" element={<Project/>}></Route>
     <Route path="contact" element={<Contact/>}></Route>
@@ -24,8 +26,9 @@ function App() {
 
 
   return (
-    <RouterProvider router={router}></RouterProvider>
-
+    <>
+    <RouterProvider router={router}/>
+    </>
   )
 }
 

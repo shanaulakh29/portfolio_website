@@ -2,7 +2,7 @@
   "name": "gurshanaulakh-github-io",
   "private": true,
   "version": "0.0.0",
-  "homepage":"https://shanaulakh29.github.io/shanaulakh29",
+  "homepage": "https://shanaulakh29.github.io/shanaulakh29",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -27,6 +27,7 @@
     "react-pdf": "^9.1.1",
     "react-router-dom": "^6.27.0",
     "react-simple-typewriter": "^5.0.1",
+    "react-toastify": "^10.0.6",
     "tsparticles": "^3.5.0",
     "vanilla-tilt": "^1.8.1"
   },

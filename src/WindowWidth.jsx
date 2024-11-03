@@ -17,12 +17,7 @@ function WindowWidth() {
     };
   }, []); // Empty dependency array means this effect runs only once on mount
 
-  return (
-    <div>
-      <p>Current window width: {windowWidth}px</p>
-     
-    </div>
-  );
+  return windowWidth;
 }
 
 export default WindowWidth;

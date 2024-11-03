@@ -1,11 +1,14 @@
-import React from "react";
+import React,{useCallback} from "react";
 import Particles from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
 const ParticlesBackground = () => {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  },[]);
+  const particlesLoaded=useCallback(async (container) =>{
+    await console.log(container)
+  },[]);
 
   const options = {
     particles: {
@@ -17,7 +20,7 @@ const ParticlesBackground = () => {
         },
       },
       color: {
-        value: "#8592f2", // Change to a color that stands out against white
+        value: "#fff", // Change to a color that stands out against white
       },
       shape: {
         type: "circle", // Keeping circle shape for simplicity
@@ -34,7 +37,9 @@ const ParticlesBackground = () => {
         enable: true,
         speed: 2,
         direction: "none",
-        out_mode: "out",
+        outModes: {
+          default: "bounce",
+        },
       },
     },
     interactivity: {
@@ -79,15 +84,21 @@ const ParticlesBackground = () => {
   };
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh", backgroundColor: "#ffffff" }}>
       <Particles
         id="tsparticles"
         init={particlesInit}
         options={options}
-        style={{ position: "absolute", width: "100%", height: "100%", top: 0, left: 0 }}
+        loaded={particlesLoaded}
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          top: 0,
+          left: 0,
+          zIndex: -1, // This ensures it stays in the background
+        }}
       />
-      <h1 style={{ position: "relative", zIndex: 1, color: "#000" }}>Hello, World!</h1>
-    </div>
+     
   );
 };
 

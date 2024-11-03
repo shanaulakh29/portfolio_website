@@ -1,9 +1,15 @@
-import React,{useState, useRef} from "react";
+import React,{useState, useRef, useEffect} from "react";
 import {Link} from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import emailjs from '@emailjs/browser'
+import {toast, Bounce} from 'react-toastify'
+
 export default function Contact() {
+  const [showLeftSectionOfContactPage,setShowLeftSectionOfContactPage]=useState(false)
+  const leftSectionContainer = useRef();
+  const rightSectionContainer = useRef();
+  const innerleftSectionContainer = useRef();
   const nameDiv=useRef();
   const emailDiv=useRef();
   const messageDiv=useRef();
@@ -17,6 +23,23 @@ export default function Contact() {
 
    const emailRegex= /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)$/;
 
+   useEffect(()=>{
+    if(!showLeftSectionOfContactPage){
+     let interval1= setTimeout(()=>{
+        leftSectionContainer.current.classList.add("left-0")
+        rightSectionContainer.current.classList.add("right-0");
+      },200)
+      let interval2= setTimeout(()=>{
+        innerleftSectionContainer.current.classList.remove("lg:hidden")
+        innerleftSectionContainer.current.classList.add("block")
+      },900)
+
+      return ()=>{
+        clearInterval(interval1);
+        clearInterval(interval2);
+      }
+    }
+   },[])
    
 
 
@@ -33,11 +56,23 @@ export default function Contact() {
         from_email:email,
         message,
         to_name: "Gurshan Aulakh"
-    
+  
       }
+
       emailjs.send(serviceId, templateId,templateParams, publicKey).then((success)=>{
         console.log("Email sent successfully "+success);
-        alert("Thank you, "+name+", for reaching out! I'll get back to you as soon as possible.")
+        // alert("Thank you, "+name+", for reaching out! I'll get back to you as soon as possible.")
+        toast("Thank you, "+name+", for reaching out! I'll get back to you as soon as possible.",{
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+          })
         setName('')
         setEmail('')
         setMessage('')
@@ -74,32 +109,32 @@ export default function Contact() {
       }else{
         messageDiv.current.classList.add('hidden');
         messageDiv.current.classList.remove("block");
-      }
-     
+      }   
   }
      
   return (
-    <div className="md:min-h-screen md:flex md:items-center md:justify-center">
-      <div className=" flex flex-col md:flex-row md:justify-center items-center  md:w-5/6 rounded-xl overflow-hidden bg-purple-800">
-        <div className="md:w-1/2 text-center lg:text-left lg:pl-6  md:pt-0  mt-8 md:mt-0 ">
-            <h1 className="text-5xl">Let's Connect</h1>
+    <div className="md:min-h-screen md:flex md:items-center md:justify-center relative ">
+      <div className=" flex flex-col md:flex-row  md:w-5/6 rounded-xl overflow-hidden">
+        <div ref={leftSectionContainer} className=" relative -left-full transition-all duration-500 md:w-1/2 text-center lg:text-left lg:pl-6  bg-purple-800">
+        <div ref={innerleftSectionContainer} className="lg:hidden">
+            <h1 className="text-5xl pt-10">Let's Connect</h1>
             <p className="pt-6 tracking-widest">
               I'm always open to new opportunities and collaborations. Whether
               you have an exciting project in mind, want to discuss potential
               job opportunities, or simply connect, I'd love to hear from you.
             </p>
-            <div className="pt-4 sm:mb-8 pb-6">
-              <Link to="https://github.com/shanaulakh29">
-            <GitHubIcon style={{fontSize:"40px", marginRight:"10px"}}/>
+            <div className="pt-4 sm:mb-8 pb-6 ">
+              <Link to="https://github.com/shanaulakh29" className="hover:scale-110 inline-block hover:shadow-xl hover:shadow-slate-300 mr-10">
+            <GitHubIcon style={{fontSize:"40px"}}/>
             </Link>
-            <Link to="https://www.linkedin.com/in/shan-aulakh-183a94192/">
+            <Link to="https://www.linkedin.com/in/shan-aulakh-183a94192/" className="hover:scale-110 inline-block hover:shadow-xl hover:shadow-slate-300 ">
             <LinkedInIcon style={{fontSize:"40px"}}/>
             </Link>
             </div>
-   
+            </div>
         </div>
-        <div className=" w-full  md:w-1/2 bg-slate-500 p-10">
-          <form onSubmit={handleSubmit} autoComplete="off">
+        <div ref={rightSectionContainer} className=" w-full  relative -right-full transition-all duration-500 md:w-1/2 bg-slate-500 p-10">
+          <form onSubmit={handleSubmit} >
             <label htmlFor="name" className="block tracking-widest">
               Name
             </label>
