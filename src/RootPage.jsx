@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
-import WindowWidth from './WindowWidth.jsx'
+// import WindowWidth from './WindowWidth.jsx'
 import InitialDesign from './InitialDesign.jsx'
 import { ToastContainer} from 'react-toastify';
 
@@ -22,7 +22,7 @@ export default function RootPage() {
   <ToastContainer />
   <Outlet/>  
   <Footer/>
-   <WindowWidth/>
+   {/* <WindowWidth/> */}
    </>:<InitialDesign/>}
  
 </div> 

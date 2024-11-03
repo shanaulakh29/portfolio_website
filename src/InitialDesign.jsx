@@ -5,7 +5,7 @@ export default function InitialDesign() {
     const svgContainerDiv = useRef();
     const movingDiv=useRef();
     const allItemsContainer = useRef();
-    let textWidth=currentWindowWidth>700?45:30;
+    let textWidth=currentWindowWidth>700?45:20;
    useEffect(()=>{
       
       let intervalId2=setInterval(()=>{

@@ -4,9 +4,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function Footer() {
   return (
-    <div className=" mt-6 flex justify-between h-14 items-center">
-      <div className="ml-6 tracking-wide">
-        &copy; 2024 - Gurshan Aulakh <p className="hidden md:inline text-center">No rights reserved.</p>
+    <div className=" mt-6 flex justify-between h-14 items-center bg-slate-900">
+      <div className="ml-6 tracking-wide text-center sm:text-left">
+        &copy; 2024 <span className="block sm:inline-block">- Gurshan Aulakh</span> <p className="hidden lg:inline text-center pl-3">No rights reserved.</p>
       </div>
       <div className="mr-6 flex items-center w-1/2 justify-evenly xl:justify-end">
       <Link to="/contact">

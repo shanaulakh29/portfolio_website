@@ -45,7 +45,7 @@ export default function Header() {
   }, [isDropdownVisible]);
 
   return (
-    <div className=" w-full p-3 text-white relative ">
+    <div className=" w-full p-3 text-white relative bg-slate-900">
       <div className="inline-block">
         <h1 className="text-4xl font-serif font-bold">
           GA
