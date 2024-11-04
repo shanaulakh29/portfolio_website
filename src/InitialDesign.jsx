@@ -31,7 +31,7 @@ export default function InitialDesign() {
               cx="50%"
               cy="50%"
               fill="purple"
-             fill-opacity="0.1"
+             fillOpacity="0.1"
               id="svg_2"
               rx="300"
               ry="300"
@@ -89,7 +89,7 @@ export default function InitialDesign() {
               alignmentBaseline="middle"
              fontFamily="'Rubik Wet Paint', cursive"
             
-             font-style="italic"
+             fontStyle="italic"
               fontSize={textWidth}
             >
               Gurshan Aulakh

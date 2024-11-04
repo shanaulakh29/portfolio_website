@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState, useEffect } from "react";
 import { Document, Page } from "react-pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +6,7 @@ import myResume from "./GurshanAulakhResume.pdf";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
+import WindowWidth from "./WindowWidth";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
@@ -13,12 +14,17 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 export default function Resume() {
-  // const [numPages, setNumPages] = useState(null);
-  // const [pageNumber, setPageNumber] = useState(1);
-
-  // function onDocumentLoadSuccess({ numPages }) {
-  //   setNumPages(numPages);
-  // }
+  let [resumeScale,setResumeScale]=useState(1)
+   let windowWidth=WindowWidth();
+   useEffect(()=>{
+    if(windowWidth<500){
+      setResumeScale(0.5)
+    }else if(windowWidth<700) {
+      setResumeScale(0.75)
+    }else{
+      setResumeScale(1)
+    }
+   },[windowWidth])
   return (
     <div className="pt-12 bg-white min-h-screen flex flex-col items-center">
 
@@ -30,8 +36,8 @@ export default function Resume() {
       </button>
 
      
-      <Document file={myResume} className="border mt-2 mb-4 shadow-2xl">
-        <Page pageNumber={1} renderAnnotationLayer={true} />
+      <Document file={myResume} className={`border mt-2 mb-4  shadow-2xl`}>
+        <Page pageNumber={1} renderAnnotationLayer={true} scale={resumeScale} />
       </Document>
 
       <div className="text-center mb-8">
