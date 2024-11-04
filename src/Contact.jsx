@@ -139,12 +139,12 @@ export default function Contact() {
               Name
             </label>
             <input
-            id="email"
+            id="name"
               type="text" value={name} name="name" onChange={({target})=>{
                 setName(target.value);
               }}
               className="block outline-none  bg-slate-500 border-b-2 border-sky-200 w-full pt-2 focus:border-b-white"
-             autoFocus={false}
+             autoFocus={false} autoComplete="on"
             />
             <div ref={nameDiv} className="text-red-700 hidden">Name field cannot be empty</div>
              
@@ -158,6 +158,7 @@ export default function Contact() {
                 setEmail(target.value);
               }}
               className="block outline-none bg-slate-500 border-b-2 w-full pt-2 border-sky-200 focus:border-b-white "
+              autoComplete="on"
             />
            <div ref={emailDiv} className="text-red-700 hidden">Email field cannot be empty</div>
 

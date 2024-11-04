@@ -20,7 +20,6 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^6.1.5",
     "@mui/material": "^6.1.5",
-    "@tsparticles/react": "^3.0.0",
     "axios": "^1.7.7",
     "pdfjs-dist": "^4.4.168",
     "react": "^18.3.1",
@@ -29,7 +28,6 @@
     "react-router-dom": "^6.27.0",
     "react-simple-typewriter": "^5.0.1",
     "react-toastify": "^10.0.6",
-    "tsparticles": "^3.5.0",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
