@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 import VanillaTilt from 'vanilla-tilt';
 export default function HomePageText() {
   let arrayShowingWhoIDo = [
-    "Web Developer",
-    "Software Engineer",
-    "Tech Enthusiastic",
-    "Node.js Developer",
-    "UX/UI Enthusiast",
+    "Web Developer 🧑‍💻",
+    "Software Engineer😊",
+    "Tech Enthusiastic 🤩 ",
+    "Node.js Developer 🔥",
+    "UX/UI Enthusiast ⚜️",
   ];
   const [text] = useTypewriter({
     words: arrayShowingWhoIDo,
