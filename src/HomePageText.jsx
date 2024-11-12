@@ -59,7 +59,7 @@ export default function HomePageText() {
 
           
         </div>
-        <div className="mt-10 lg:mt-0 border-blue-500  lg:w-1/2  rounded-xl ">
+        <div className="mt-10 lg:mt-8 border-blue-500  lg:w-1/2  rounded-xl ">
           <div className="lg:items-center mt-12 flex justify-center items-center ">
           {/* xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" */}
           <svg className=""  width="500" height="500" >
@@ -77,7 +77,7 @@ export default function HomePageText() {
      </ellipse> 
      <text id="myInitials"  x="50%"  y="50%"  textAnchor="middle" alignmentBaseline="middle" fontStyle="" fontSize="110" >GA
       <tspan dx="5" dy="20" fill="orange">.
-      <animate  attributeName="dy" values="10;-23;10" dur="2s" repeatCount="indefinite"/>
+      <animate  attributeName="dy" values="23;-40;23" dur="2s" repeatCount="indefinite"/>
      </tspan>
      </text>
      <use xlinkHref="#myInitials" className="copy copy1"></use>

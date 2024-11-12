@@ -80,11 +80,7 @@ export default function Header() {
           Projects
           <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
         </NavLink>
-        <NavLink to="/resume" className="mr-7 text-xl inline-block group">
-          <FontAwesomeIcon icon={faFileInvoice} className="mr-1" />
-          Resume
-          <div className="  scale-x-0 h-1  rounded-xl bg-purple-500 transition-all duration-1000 origin-left group-hover:scale-x-100 "></div>
-        </NavLink>
+
         <NavLink to="/contact" className="mr-7 text-xl inline-block  group">
           <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
           Contact
@@ -136,9 +132,6 @@ export default function Header() {
 
             <div className="text-3xl  mt-3 tracking-wide hover:scale-110 hover:text-purple-500"  onClick={changeDropDownVisileState}>
               <NavLink to="/project">Projects</NavLink>
-            </div>
-            <div className="text-3xl  mt-3 tracking-wide hover:scale-110 hover:text-purple-500"  onClick={changeDropDownVisileState}>
-              <NavLink to="/resume">Resume</NavLink>
             </div>
             <div className="text-3xl  mt-3 tracking-wide hover:scale-110 hover:text-purple-500"  onClick={changeDropDownVisileState}>
               <NavLink to="/contact">Contact</NavLink>
