@@ -6,20 +6,7 @@ export default function InitialDesign() {
     const movingDiv=useRef();
     const allItemsContainer = useRef();
     let textWidth=currentWindowWidth>700?45:20;
-   useEffect(()=>{
-      
-      let intervalId2=setInterval(()=>{
-        svgContainerDiv.current.classList.remove("hidden")
-        svgContainerDiv.current.classList.add("flex")
-      });
-      
 
-      return ()=>{
-        // clearInterval(intervalId1)
-        clearInterval(intervalId2)
-      }
-   },[])
-   
   return (
     <div ref={allItemsContainer} className="min-h-screen bg-slate-900 relative fadeDiv">
          <div ref={movingDiv} className="w-full h-28 bg-white absolute makeDivFlow"></div>
