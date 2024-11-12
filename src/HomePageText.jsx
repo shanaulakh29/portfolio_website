@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { NavLink } from "react-router-dom";
 import VanillaTilt from 'vanilla-tilt';
+import myResume from "../public/myResume.pdf";
 export default function HomePageText() {
   let arrayShowingWhoIDo = [
     "Web Developer ",
@@ -35,6 +36,12 @@ export default function HomePageText() {
       });
     };
   }, []);
+
+  const openResume = () => {
+    // const resumeUrl = `${process.env.PUBLIC_URL}/myResume.pdf`;
+    window.open(myResume, '_blank');
+  };
+
   return (
     <div>
       <div className="lg:h-screen">
@@ -92,7 +99,8 @@ export default function HomePageText() {
       </div>
       <div className=" mt-8 lg:mt-0 flex justify-center lg:justify-start relative">
        <NavLink to="/contact"  className="ml-6 p-5 mr-6 border rounded-3xl text-lg hover:text-purple-500 hover:border-purple-500 hover:shadow-2xl hover:shadow-purple-800 relative -top-2 active:-top-0" >Contact Me</NavLink> 
-       <NavLink to="/resume" className="ml-6 p-5 border rounded-3xl text-lg hover:text-purple-500  hover:border-purple-500 hover:shadow-2xl  hover:shadow-purple-800 relative -top-2 active:-top-0">View Resume</NavLink> 
+       <NavLink to="/resume" className="ml-6 p-5 border rounded-3xl text-lg hover:text-purple-500  hover:border-purple-500 hover:shadow-2xl  hover:shadow-purple-800 relative -top-2 active:-top-0"
+       onClick={openResume}>View Resume</NavLink> 
       </div>
       </div>
 

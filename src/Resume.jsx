@@ -2,7 +2,7 @@ import React, {useState, useEffect } from "react";
 import { Document, Page } from "react-pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
-import myResume from "./GurshanAulakhResume.pdf";
+import myResume from "../public/myResume.pdf";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
@@ -25,6 +25,12 @@ export default function Resume() {
       setResumeScale(1)
     }
    },[windowWidth])
+
+
+  // const openResume = () => {
+    
+  //   window.open(myResume, '_blank');
+  // };
   return (
     <div className="pt-12 bg-white min-h-screen flex flex-col items-center">
 
@@ -34,6 +40,14 @@ export default function Resume() {
         </a>{" "}
         <FontAwesomeIcon icon={faFileArrowDown} />
       </button>
+
+      {/* <button className="bg-blue-600 py-4 px-8 rounded-3xl shadow-2xl tracking-wide relative -top-1 active:-top-0 active:bg-blue-800 transition-all duration-300 "
+      onClick={openResume}>
+        { <a href={myResume} download={myResume} className="inline-block ">
+          Downlad
+        </a>{" "} }
+        <FontAwesomeIcon icon={faFileArrowDown} />
+      </button> */}
 
      
       <Document file={myResume} className={`border mt-2 mb-4  shadow-2xl`}>
@@ -50,4 +64,5 @@ export default function Resume() {
       </div>
     </div>
   );
+
 }
