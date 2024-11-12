@@ -99,8 +99,8 @@ export default function HomePageText() {
       </div>
       <div className=" mt-8 lg:mt-0 flex justify-center lg:justify-start relative">
        <NavLink to="/contact"  className="ml-6 p-5 mr-6 border rounded-3xl text-lg hover:text-purple-500 hover:border-purple-500 hover:shadow-2xl hover:shadow-purple-800 relative -top-2 active:-top-0" >Contact Me</NavLink> 
-       <NavLink to="/resume" className="ml-6 p-5 border rounded-3xl text-lg hover:text-purple-500  hover:border-purple-500 hover:shadow-2xl  hover:shadow-purple-800 relative -top-2 active:-top-0"
-       onClick={openResume}>View Resume</NavLink> 
+       <button className="ml-6 p-5 border rounded-3xl text-lg hover:text-purple-500  hover:border-purple-500 hover:shadow-2xl  hover:shadow-purple-800 relative -top-2 active:-top-0"
+       onClick={openResume}>View Resume</button> 
       </div>
       </div>
 

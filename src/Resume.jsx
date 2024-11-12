@@ -36,7 +36,7 @@ export default function Resume() {
 
       <button className="bg-blue-600 py-4 px-8 rounded-3xl shadow-2xl tracking-wide relative -top-1 active:-top-0 active:bg-blue-800 transition-all duration-300 ">
         <a href={myResume} download={myResume} className="inline-block ">
-          Downlad
+          Download
         </a>{" "}
         <FontAwesomeIcon icon={faFileArrowDown} />
       </button>
