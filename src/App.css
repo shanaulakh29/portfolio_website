@@ -58,16 +58,5 @@ input:-webkit-autofill:hover {
     opacity: 0;
   }
 }
-.makeDivFlow{
-  animation: divFlowAnimation 2s ease-in-out infinite;
-}
-@keyframes divFlowAnimation {
-  0%{
-    bottom:1500px;
-  }
-  100%{
-    bottom:-1500px;
-  }
-}
 
 

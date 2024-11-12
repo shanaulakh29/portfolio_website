@@ -11,7 +11,7 @@ export default function RootPage() {
   useEffect(()=>{
     let intervalId=setTimeout(()=>{
       setIsVisible(true)
-    },3300)
+    },3000)
     return ()=>{
       clearInterval(intervalId)
     }

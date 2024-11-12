@@ -11,7 +11,7 @@ export default function Project() {
             <img src="/MazeGame.jpg" className="h-96 object-cover" ></img> 
           </div>
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-2xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Maze Game{" "}
               <Link to="https://github.com/shanaulakh29/Maze-Game-In-Java">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
@@ -39,7 +39,7 @@ export default function Project() {
           </div>
 
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-2xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Inventory Management{" "}
               <Link to="https://github.com/shanaulakh29/Water-Purification-Inventory-Management">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
@@ -65,7 +65,7 @@ export default function Project() {
             <img src="/ExpenseTracker.jpg" className="h-96"></img>
           </div>
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-3xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Expense Tracker{" "}
               <Link to="https://github.com/shanaulakh29/Expense_Tracker">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
@@ -91,7 +91,7 @@ export default function Project() {
             <img src="/MovieAppImage.jpeg" className="h-96"></img>
           </div>
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-3xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Movie App{" "}
               <Link to="https://github.com/shanaulakh29/Movie-App">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
@@ -117,7 +117,7 @@ export default function Project() {
             <img src="/WeatherAppImage.jpeg" className="h-96"></img>
           </div>
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-3xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Weather App{" "}
               <Link to="https://github.com/shanaulakh29/Weather-App">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
@@ -142,7 +142,7 @@ export default function Project() {
             <img src="/AppointmentPlanner.jpeg" className="h-96"></img>
           </div>
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-3xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Appointment Form{" "}
               <Link to="https://github.com/shanaulakh29/Appointment_Planner">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
@@ -167,7 +167,7 @@ export default function Project() {
             <img src="/ProductModel.jpeg" className="h-96"></img>
           </div>
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-3xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Product Model{" "}
               <Link to="https://github.com/shanaulakh29/Product-Modal-using-Tailwind-CSS">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
@@ -190,7 +190,7 @@ export default function Project() {
             <img src="/UserList.jpeg" className="h-96"></img>
           </div>
           <div className="flex flex-col items-center bg-white text-black">
-            <h1 className="font-mono text-3xl font-bold mt-3 ">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               UserList{" "}
               <Link to="https://github.com/shanaulakh29/Bootstrap_UserList">
                 <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">

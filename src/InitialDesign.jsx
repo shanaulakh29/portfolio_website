@@ -8,9 +8,9 @@ export default function InitialDesign() {
     let textWidth=currentWindowWidth>700?45:20;
 
   return (
-    <div ref={allItemsContainer} className="min-h-screen bg-slate-900 relative fadeDiv">
-         <div ref={movingDiv} className="w-full h-28 bg-white absolute makeDivFlow"></div>
-      <div ref={svgContainerDiv}className=" flex justify-center items-center min-h-screen">
+    <div ref={allItemsContainer} className="min-h-screen bg-slate-900 relative fadeDiv max-h-screen">
+
+      <div ref={svgContainerDiv}className=" flex justify-center items-center min-h-screen ">
         <svg  width="700" height="700" >
           <g>
             <title>Layer 1</title>
