@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { NavLink } from "react-router-dom";
 import VanillaTilt from 'vanilla-tilt';
-import myResume from "../public/myResume.pdf";
+import myResumee from "../public/myResumee.pdf";
 export default function HomePageText() {
   let arrayShowingWhoIDo = [
     "Web Developer ",
@@ -39,7 +39,7 @@ export default function HomePageText() {
 
   const openResume = () => {
     // const resumeUrl = `${process.env.PUBLIC_URL}/myResume.pdf`;
-    window.open(myResume, '_blank');
+    window.open(myResumee, '_blank');
   };
 
   return (

@@ -546,7 +546,7 @@ export default function About() {
       <div className="flex flex-col items-center justify-evenly h-60 text-xl ">
          <p>Computer Science BSc</p>
          <p>Simon Fraser University</p>
-         Expected Graduation: December 2027
+         Expected Graduation: December 2026
       </div>
     </div>
   );

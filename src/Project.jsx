@@ -8,6 +8,48 @@ export default function Project() {
       <div className="flex m-8 justify-center gap-8 mt-12 flex-wrap ">
         <div className="flex flex-col border sm:max-w-lg  lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
           <div className="">
+            <img src="/MindstreamAI.png" className="h-96 object-cover" ></img> 
+          </div>
+          <div className="flex flex-col items-center bg-white text-black">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
+              Mindstream AI{" "}
+              <Link to="https://github.com/CMPT-276-FALL-2024/project-21-springs">
+                <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
+                  <GitHubIcon
+                    className="animate-pulse"
+                    style={{ fontSize: "30px" }}
+                  />
+                </div>
+              </Link>
+            </h1>
+            <p className="p-4 tracking-wide font-serif text-stone-600">
+             MindStream is an all-in-one study companion designed to make exam prep and coursework easier. Students can upload their lecture slides and instantly get a clear summary of the material, topic-based flashcards, and even an engaging audio conversation between two people that reinforces key concepts. Beyond that, MindStream includes an AI-powered chatbot to answer questions in real time and a personalized study planner that creates a weekly schedule, helping students stay organized and focused
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col border sm:max-w-lg  lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
+          <div className="">
+            <img src="/CaptureTheStar.png" className="w-full h-96 object-cover border-black" ></img> 
+          </div>
+          <div className="flex flex-col items-center bg-white text-black">
+            <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
+              Capture the Star{" "}
+              <Link to="https://github.com/p-north/TCP_Networking_Game">
+                <div className="inline-block border border-black p-2 rounded-full hover:border-green-500 hover:border-2 relative -top-1">
+                  <GitHubIcon
+                    className="animate-pulse"
+                    style={{ fontSize: "30px" }}
+                  />
+                </div>
+              </Link>
+            </h1>
+            <p className="p-4 tracking-wide font-serif text-stone-600">
+              Capture The Star is a thrilling fast-paced online multiplayer game that keeps players on the edge of their seats. The goal is simple yet exciting—collect as many stars as possible before the clock runs out. Along the way, players encounter dynamic obstacles, special power-ups like sprinters to boost speed, and tricky punishers such as showers that add an extra layer of challenge. The real excitement comes when chasing the bright yellow stars for points or going after the rare and highly coveted red star, which brings even greater rewards. Every match is packed with energy, strategy, and fun, making Capture The Star an addictive experience for players of all ages.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col border sm:max-w-lg  lg:max-w-sm rounded-3xl overflow-hidden bg-white scale-90 transition-all duration-500 hover:shadow-purple-500 shadow-2xl hover:scale-95">
+          <div className="">
             <img src="/MazeGame.jpg" className="h-96 object-cover" ></img> 
           </div>
           <div className="flex flex-col items-center bg-white text-black">
@@ -37,7 +79,6 @@ export default function Project() {
           <div>
             <img src="/WaterPurification.png" className="h-96"></img>
           </div>
-
           <div className="flex flex-col items-center bg-white text-black">
             <h1 className="font-mono text-xl lg:text-2xl font-bold mt-3 ">
               Inventory Management{" "}
