@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className=" mt-6 flex justify-between h-14 items-center bg-slate-900">
       <div className="ml-6 tracking-wide text-center sm:text-left">
-        &copy; 2024 <span className="block sm:inline-block">- Gurshan Aulakh</span> <p className="hidden lg:inline text-center pl-3">No rights reserved.</p>
+        &copy; 2025 <span className="block sm:inline-block">- Gurshan Aulakh</span> <p className="hidden lg:inline text-center pl-3">No rights reserved.</p>
       </div>
       <div className="mr-6 flex items-center w-1/2 justify-evenly xl:justify-end">
       <Link to="/contact">

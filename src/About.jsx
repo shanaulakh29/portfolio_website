@@ -543,10 +543,9 @@ export default function About() {
       </div>
 
       <div className="text-center text-purple-500 text-5xl mt-16 lg:mt-20">EDUCATION</div>
-      <div className="flex flex-col items-center justify-evenly h-60 text-xl ">
+      <div className="flex mt-4 flex-col items-center justify-evenly h-20 text-xl ">
          <p>Computer Science BSc</p>
          <p>Simon Fraser University</p>
-         Expected Graduation: December 2026
       </div>
     </div>
   );
